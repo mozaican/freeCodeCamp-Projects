@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+body {
+    background-color: #277552;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#wrapper {
+    max-width: 50%;
+    margin: 0 auto;
+    background-color: #71AA97;
+    padding: 30px;
+}
+
+#title {
+    color: #fff;
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#survey-form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 20px;
+}
+
+#name, #email, #number {
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+}
+  
+input:focus {
+    background-color: #c6ccc9;
+}
+  
+#dropdown {
+    width: 60%;
+    height: 35px;
+    border-radius: 5px;
+    font-family: 'Oxygen', sans-serif;    
+}
+
+#name-label, #email-label, #number-label, #role, #recommand, #organized, #rate, #improve, #textarea {
+    grid-column: 1 / 2;
+    justify-self: end;
+    margin-right: 30px;
+}
+
+#name, #email, #number, #dropdown, .recommandation, .rate, .improving {
+    grid-column: 2 / 3;
+}
+
+textarea {
+    width: 60%;
+    height: 80px;
+    border-radius: 5px;
+}
+  
+#submit {
+    margin: 0 auto;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+    background-color: #1dccba;
+    color: #fff;
+}

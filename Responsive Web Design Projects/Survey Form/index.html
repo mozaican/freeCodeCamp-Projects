@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <div id="wrapper">
+        <p id="description">Thanks for joining TechConference! Let us know how we can improve the next event.</p>
+        <form id="survey-form" action="#">
+            <label for="name" id="name-label">Name*</label>
+            <input id="name" type="text" required placeholder="Enter your name">
+            <label for="email" id="email-label">Email*</label>
+            <input id="email" type="email" required placeholder="Enter your email">
+            <label for="number" id="number-label">Age*</label>
+            <input id="number" type="number" required placeholder="Enter your age" min="16" max="100">
+            <p id="role">Which option best describes your current role?</p>
+            <select id="dropdown" name="role">
+                <option value="student">Student</option>
+                <option value="part-time">Part-time job</option>
+                <option value="full-time">Full-time job</option>
+                <option value="other">Other</option>
+            </select>
+            <p id="recommand">How likely is that you would recommand TechConference to a friend?</p>
+            <label class="recommandation">
+                <input type="radio" name="recommandation" value="definitely">Definitely
+            </label>
+            <label class="recommandation">
+                <input type="radio" name="recommandation" value="maybe">Maybe
+            </label>
+            <label class="recommandation">
+                <input type="radio" name="recommandation" value="not-sure">Not sure
+            </label>
+            <p id="organized">How organized was the event?</p>
+            <select id="dropdown" name="organized">
+                <option value="extremely">Extremely organized</option>
+                <option value="very">Very organized</option>
+                <option value="somewhat">Somewhat organized</option>
+                <option value="not-so">Not so organized</option>
+                <option value="not-at-all">Not at all organized</option>
+            </select>
+            <p id="rate">Overall, how would you rate this event?</p>
+            <label class="rate">
+                <input type="radio" name="rate" value="definitely">Excellent
+            </label>
+            <label class="rate">
+                <input type="radio" name="rate" value="maybe">Very good
+            </label>
+            <label class="rate">
+                <input type="radio" name="rate" value="not-sure">Good
+            </label>
+            <label class="rate">
+                <input type="radio" name="rate" value="not-sure">Fair
+            </label>
+            <label class="rate">
+                <input type="radio" name="rate" value="not-sure">Poor
+            </label>
+            <p id="improve">Things that should be improved in the future (check all that apply):</p>
+            <label class="improving">
+                <input type="checkbox" name="improving" value="promovation">Promovation
+            </label>
+            <label class="improving">
+                <input type="checkbox" name="improving" value="staff">Staff
+            </label>
+            <label class="improving">
+                <input type="checkbox" name="improving" value="organization">Organization
+            </label>
+            <label class="improving">
+                <input type="checkbox" name="improving" value="timing">Timing
+            </label>
+            <label class="improving">
+                <input type="checkbox" name="improving" value="location">Location
+            </label>
+            <label class="improving">
+                <input type="checkbox" name="improving" value="speakers">Speakers
+            </label>
+            <label class="improving">
+                <input type="checkbox" name="improving" value="panels">Discussion panels
+            </label>
+            <p id="textarea">Is there anything else you'd like to share about this event?</p>
+            <textarea placeholder="Enter your comment here..."></textarea><br/>
+            <input type="submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>
