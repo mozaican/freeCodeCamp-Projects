@@ -1,89 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey Form</title>
 </head>
 <body>
-    <h1 id="title">Survey Form</h1>
+    <h1 id="title">Restaurant Survey</h1>
     <div id="wrapper">
-        <p id="description">Thanks for joining TechConference! Let us know how we can improve the next event.</p>
+        <img src="img/restaurant.jpg" alt="restaurant logo" />
+        <p id="description">Please help us learn what we are doing right and what we need to improve by filling out this survey. Thank you!</p>
         <form id="survey-form" action="#">
+            <label for="persons" id="persons-label">How many in your party?</label>
+            <input id="number" type="number" placeholder="Enter the number of persons" />
+            <label for="date" id="date-label">Date</label>
+            <input id="date" type="date" name="date" />
+            <p id="meal-options">What did you choose today (check all that apply)?</p>
+            <label class="meal">
+                <input type="checkbox" name="meal" value="dine-in" />Dine in
+            </label>
+            <label class="meal">
+                <input type="checkbox" name="meal" value="take-out" />Take out
+            </label>
+            <label class="meal">
+                <input type="checkbox" name="meal" value="breakfast" />Breakfast
+            </label>
+            <label class="meal">
+                <input type="checkbox" name="meal" value="lunch" />Lunch
+            </label>
+            <label class="meal">
+                <input type="checkbox" name="meal" value="dinner" />Dinner
+            </label>
+            <p id="server-name">The name of your server:</p>
+            <select id="server" name="server-name">
+                <option value="john">John Green</option>
+                <option value="bob">Bob Collin</option>
+                <option value="brian">Brian Jones</option>
+                <option value="george">George Reed</option>
+                <option value="lawrence">Lawrence Marron</option>
+            </select>
+            <p id="order">What did you order?</p>
+            <textarea name="order" id="order-name" cols="30" rows="8" placeholder="I have ordered..."></textarea>
+            <p id="rating">Rate your experience in our restaurant:</p>
+            <label id="food">Quality of food:
+                <input type="radio" name="food" value="excellent" />Excellent
+                <input type="radio" name="food" value="good" />Good
+                <input type="radio" name="food" value="fair" />Fair
+                <input type="radio" name="food" value="poor" />Poor
+            </label>
+            <label id="portion">Portion size:
+                <input type="radio" name="portion" value="excellent" />Excellent
+                <input type="radio" name="portion" value="good" />Good
+                <input type="radio" name="portion" value="fair" />Fair
+                <input type="radio" name="portion" value="poor" />Poor
+            </label>
+            <label id="ordering">Ease of ordering:
+                <input type="radio" name="ordering" value="excellent" />Excellent
+                <input type="radio" name="ordering" value="good" />Good
+                <input type="radio" name="ordering" value="fair" />Fair
+                <input type="radio" name="ordering" value="poor" />Poor
+            </label>
+            <label id="service">Service:
+                <input type="radio" name="service" value="excellent" />Excellent
+                <input type="radio" name="service" value="good" />Good
+                <input type="radio" name="service" value="fair" />Fair
+                <input type="radio" name="service" value="poor" />Poor
+            </label>
+            <label id="cleanliness">Cleanliness:
+                <input type="radio" name="cleanliness" value="excellent" />Excellent
+                <input type="radio" name="cleanliness" value="good" />Good
+                <input type="radio" name="cleanliness" value="fair" />Fair
+                <input type="radio" name="cleanliness" value="poor" />Poor
+            </label>
+            <label id="overall">Overall value:
+                <input type="radio" name="overall" value="excellent" />Excellent
+                <input type="radio" name="overall" value="good" />Good
+                <input type="radio" name="overall" value="fair" />Fair
+                <input type="radio" name="overall" value="poor" />Poor
+            </label>
+            <p id="comment">Is there anything else you would like to share about our restaurant?</p>
+            <textarea name="comment" id="comment" cols="30" rows="8" placeholder="Enter your comment here..."></textarea>
             <label for="name" id="name-label">Name*</label>
             <input id="name" type="text" required placeholder="Enter your name">
             <label for="email" id="email-label">Email*</label>
             <input id="email" type="email" required placeholder="Enter your email">
             <label for="number" id="number-label">Age*</label>
             <input id="number" type="number" required placeholder="Enter your age" min="16" max="100">
-            <p id="role">Which option best describes your current role?</p>
-            <select id="dropdown" name="role">
-                <option value="student">Student</option>
-                <option value="part-time">Part-time job</option>
-                <option value="full-time">Full-time job</option>
+            <label for="gender" id="gender-label">Gender
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+            </label>
+            <p id="source">How did you learn about us?</p>
+            <select id="dropdown" name="source">
+                <option value="online">Online</option>
+                <option value="newspaper">Newspaper</option>
+                <option value="tv">TV</option>
+                <option value="radio">Radio</option>
+                <option value="friend">Friend</option>
                 <option value="other">Other</option>
             </select>
-            <p id="recommand">How likely is that you would recommand TechConference to a friend?</p>
-            <label class="recommandation">
-                <input type="radio" name="recommandation" value="definitely">Definitely
-            </label>
-            <label class="recommandation">
-                <input type="radio" name="recommandation" value="maybe">Maybe
-            </label>
-            <label class="recommandation">
-                <input type="radio" name="recommandation" value="not-sure">Not sure
-            </label>
-            <p id="organized">How organized was the event?</p>
-            <select id="dropdown" name="organized">
-                <option value="extremely">Extremely organized</option>
-                <option value="very">Very organized</option>
-                <option value="somewhat">Somewhat organized</option>
-                <option value="not-so">Not so organized</option>
-                <option value="not-at-all">Not at all organized</option>
-            </select>
-            <p id="rate">Overall, how would you rate this event?</p>
-            <label class="rate">
-                <input type="radio" name="rate" value="definitely">Excellent
-            </label>
-            <label class="rate">
-                <input type="radio" name="rate" value="maybe">Very good
-            </label>
-            <label class="rate">
-                <input type="radio" name="rate" value="not-sure">Good
-            </label>
-            <label class="rate">
-                <input type="radio" name="rate" value="not-sure">Fair
-            </label>
-            <label class="rate">
-                <input type="radio" name="rate" value="not-sure">Poor
-            </label>
-            <p id="improve">Things that should be improved in the future (check all that apply):</p>
-            <label class="improving">
-                <input type="checkbox" name="improving" value="promovation">Promovation
-            </label>
-            <label class="improving">
-                <input type="checkbox" name="improving" value="staff">Staff
-            </label>
-            <label class="improving">
-                <input type="checkbox" name="improving" value="organization">Organization
-            </label>
-            <label class="improving">
-                <input type="checkbox" name="improving" value="timing">Timing
-            </label>
-            <label class="improving">
-                <input type="checkbox" name="improving" value="location">Location
-            </label>
-            <label class="improving">
-                <input type="checkbox" name="improving" value="speakers">Speakers
-            </label>
-            <label class="improving">
-                <input type="checkbox" name="improving" value="panels">Discussion panels
-            </label>
-            <p id="textarea">Is there anything else you'd like to share about this event?</p>
-            <textarea placeholder="Enter your comment here..."></textarea><br/>
-            <input type="submit" id="submit">
+            <input type="submit" id="submit" />
         </form>
     </div>
 </body>
