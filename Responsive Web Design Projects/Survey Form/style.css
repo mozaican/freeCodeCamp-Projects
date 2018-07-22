@@ -1,73 +1,65 @@
 @import url('https://fonts.googleapis.com/css?family=Oxygen');
 
 body {
-    background-color: #277552;
-    font-family: 'Oxygen', sans-serif;
+  background-color: #000;
+  font-family: 'Oxygen', sans-serif;
 }
 
 #wrapper {
-    max-width: 50%;
-    margin: 0 auto;
-    background-color: #71AA97;
-    padding: 30px;
+  max-width: 60%;
+  margin: 0 auto;
+  background-color: #71AA97;
+  padding: 2%;
+  border-radius: 2%;
 }
 
 #title {
-    color: #fff;
-    text-align: center;
+  color: #fff;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 20%;
+  border-radius: 50%;
+  margin: 0 auto;
 }
 
 #description {
-    text-align: center;
-    padding-bottom: 30px;
+  text-align: center;
+  font-size: 1.1em;
 }
 
 #survey-form {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-row-gap: 20px;
+  margin: 10%; 
 }
 
-#name, #email, #number {
-    width: 60%;
-    height: 30px;
-    border-radius: 5px;
-}
-  
-input:focus {
-    background-color: #c6ccc9;
-}
-  
-#dropdown {
-    width: 60%;
-    height: 35px;
-    border-radius: 5px;
-    font-family: 'Oxygen', sans-serif;    
+#number, #date, #name, #email, #age{
+  width: 25%;
+  margin-left: 1%;
+  padding: 1%;
 }
 
-#name-label, #email-label, #number-label, #role, #recommand, #organized, #rate, #improve, #textarea {
-    grid-column: 1 / 2;
-    justify-self: end;
-    margin-right: 30px;
+#server, #order-name, #dropdown, #comment {
+  padding: 1%;
+  width: 50%;
+  margin-left: 5%;
 }
 
-#name, #email, #number, #dropdown, .recommandation, .rate, .improving {
-    grid-column: 2 / 3;
+#persons-label, #date-label, #meal-options, .meal, #server-name, #order, #rating, .rate, #source, #comment{
+  margin: 5% 0 3% 5%;
 }
 
-textarea {
-    width: 60%;
-    height: 80px;
-    border-radius: 5px;
+input[type=radio] {
+  margin: 1%;
 }
-  
+
 #submit {
-    margin: 0 auto;
-    width: 100px;
-    height: 40px;
-    border-radius: 8px;
-    font-family: 'Oxygen', sans-serif;
-    font-size: 16px;
-    background-color: #1dccba;
-    color: #fff;
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1em;
+  background-color: #000;
+  color: #fff;
 }
