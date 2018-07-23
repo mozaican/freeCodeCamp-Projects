@@ -3,14 +3,16 @@
 body {
   background-color: #000;
   font-family: 'Oxygen', sans-serif;
+  text-align: center;
+  min-width: 320px;
 }
 
 #wrapper {
-  max-width: 60%;
+  max-width: 900px;
   margin: 0 auto;
   background-color: #71AA97;
   padding: 2%;
-  border-radius: 2%;
+  border-radius: 1%;
 }
 
 #title {
@@ -30,28 +32,41 @@ img {
   font-size: 1.1em;
 }
 
-#survey-form {
-  margin: 10%; 
+.label {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 40px;
 }
 
-#number, #date, #name, #email, #age{
-  width: 25%;
-  margin-left: 1%;
-  padding: 1%;
+.right {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
 }
 
-#server, #order-name, #dropdown, #comment {
-  padding: 1%;
-  width: 50%;
-  margin-left: 5%;
+.input, .dropdown {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin-top: 40px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
 }
 
-#persons-label, #date-label, #meal-options, .meal, #server-name, #order, #rating, .rate, #source, #comment{
-  margin: 5% 0 3% 5%;
+.checkbox, .radio, .gender {
+  padding: 5px;
 }
 
-input[type=radio] {
-  margin: 1%;
+#meals, #gender, fieldset {
+  margin-top: 40px;
+}
+
+#waiter, #dropdown {
+  height: 35px;
 }
 
 #submit {
@@ -62,4 +77,5 @@ input[type=radio] {
   font-size: 1em;
   background-color: #000;
   color: #fff;
+  margin-top: 30px;
 }
