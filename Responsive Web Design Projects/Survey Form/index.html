@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
@@ -7,15 +8,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey Form</title>
 </head>
+
 <body>
     <h1 id="title">Restaurant Survey</h1>
     <div id="wrapper">
-        <img src="https://www.bgimigrant.com/info/wp-content/uploads/2017/03/77dd35de03033a2e95d0e65825133041.jpg" alt="restaurant logo" />
+        <img src="https://www.bgimigrant.com/info/wp-content/uploads/2017/03/77dd35de03033a2e95d0e65825133041.jpg" alt="restaurant logo"
+        />
         <p id="description">Please help us learn what we are doing right and what we need to improve by filling out this survey. Thank you!</p>
         <form id="survey-form" action="#">
             <div class="row">
                 <div class="label">
-                    <label id="persons-label" for="persons" >How many in your party?</label>
+                    <label id="persons-label" for="persons">How many in your party?</label>
                 </div>
                 <div class="right">
                     <input id="number" class="input" type="number" placeholder="Enter the number of people" min="1" max="20" />
@@ -27,7 +30,7 @@
                 </div>
                 <div class="right">
                     <input id="date" class="input" type="date" name="date" />
-                </div>  
+                </div>
             </div>
             <div class="row">
                 <div class="label">
@@ -41,7 +44,7 @@
                         <li class="checkbox"><label><input type="checkbox" name="meal" value="lunch" class="meal" />Lunch</label></li>
                         <li class="checkbox"><label><input type="checkbox" name="meal" value="dinner" class="meal" />Dinner</label></li>
                     </ul>
-            </div>
+                </div>
             </div>
             <div class="row">
                 <div class="label">
@@ -49,12 +52,12 @@
                 </div>
                 <div class="right">
                     <select id="waiter" name="waiter" class="dropdown">
-                        <option value="john">John Green</option>
-                        <option value="bob">Bob Collin</option>
-                        <option value="brian">Brian Jones</option>
-                        <option value="george">George Reed</option>
-                        <option value="lawrence">Lawrence Marron</option>
-                    </select>
+                    <option value="john">John Green</option>
+                    <option value="bob">Bob Collin</option>
+                    <option value="brian">Brian Jones</option>
+                    <option value="george">George Reed</option>
+                    <option value="lawrence">Lawrence Marron</option>
+                  </select>
                 </div>
             </div>
             <div class="row">
@@ -64,17 +67,17 @@
                 <div class="right">
                     <textarea name="order" id="order" class="input" style="height:70px;resize:vertical;" placeholder="I have ordered..."></textarea>
                 </div>
-            </div> 
+            </div>
             <div class="row">
                 <div class="label">
                     <label for="food">Quality of food:</label>
                 </div>
                 <div class="right">
                     <ul style="list-style: none;">
-                        <li class="radio"><label>Excellent<input type="radio" name="food" value="excellent" class="rating" /></label></li>
-                        <li class="radio"><label>Good<input type="radio" name="food" value="good" class="rating" /></label></li>
-                        <li class="radio"><label>Fair<input type="radio" name="food" value="fair" class="rating" /></label></li>
-                        <li class="radio"><label>Poor<input type="radio" name="food" value="poor" class="rating" /></label></li>
+                        <li class="radio"><label><input type="radio" name="food" value="excellent" class="rating" />Excellent</label></li>
+                        <li class="radio"><label><input type="radio" name="food" value="good" class="rating" />Good</label></li>
+                        <li class="radio"><label><input type="radio" name="food" value="fair" class="rating" />Fair</label></li>
+                        <li class="radio"><label><input type="radio" name="food" value="poor" class="rating" />Poor</label></li>
                     </ul>
                 </div>
                 <div class="label">
@@ -82,10 +85,10 @@
                 </div>
                 <div class="right">
                     <ul style="list-style: none;">
-                        <li class="radio"><label>Excellent<input type="radio" name="portion" value="excellent" class="rating" /></label></li>
-                        <li class="radio"><label>Good<input type="radio" name="portion" value="good" class="rating" /></label></li>
-                        <li class="radio"><label>Fair<input type="radio" name="portion" value="fair" class="rating" /></label></li>
-                        <li class="radio"><label>Poor<input type="radio" name="portion" value="poor" class="rating" /></label></li>
+                        <li class="radio"><label><input type="radio" name="portion" value="excellent" class="rating" />Excellent</label></li>
+                        <li class="radio"><label><input type="radio" name="portion" value="good" class="rating" />Good</label></li>
+                        <li class="radio"><label><input type="radio" name="portion" value="fair" class="rating" />Fair</label></li>
+                        <li class="radio"><label><input type="radio" name="portion" value="poor" class="rating" />Poor</label></li>
                     </ul>
                 </div>
                 <div class="label">
@@ -93,10 +96,10 @@
                 </div>
                 <div class="right">
                     <ul style="list-style: none;">
-                        <li class="radio"><label>Excellent<input type="radio" name="ordering" value="excellent" class="rating" /></label></li>
-                        <li class="radio"><label>Good<input type="radio" name="ordering" value="good" class="rating" /></label></li>
-                        <li class="radio"><label>Fair<input type="radio" name="ordering" value="fair" class="rating" /></label></li>
-                        <li class="radio"><label>Poor<input type="radio" name="ordering" value="poor" class="rating" /></label></li>
+                        <li class="radio"><label><input type="radio" name="ordering" value="excellent" class="rating" />Excellent</label></li>
+                        <li class="radio"><label><input type="radio" name="ordering" value="good" class="rating" />Good</label></li>
+                        <li class="radio"><label><input type="radio" name="ordering" value="fair" class="rating" />Fair</label></li>
+                        <li class="radio"><label><input type="radio" name="ordering" value="poor" class="rating" />Poor</label></li>
                     </ul>
                 </div>
                 <div class="label">
@@ -104,10 +107,10 @@
                 </div>
                 <div class="right">
                     <ul style="list-style: none;">
-                        <li class="radio"><label>Excellent<input type="radio" name="service" value="excellent" class="rating" /></label></li>
-                        <li class="radio"><label>Good<input type="radio" name="service" value="good" class="rating" /></label></li>
-                        <li class="radio"><label>Fair<input type="radio" name="service" value="fair" class="rating" /></label></li>
-                        <li class="radio"><label>Poor<input type="radio" name="service" value="poor" class="rating" /></label></li>
+                        <li class="radio"><label><input type="radio" name="service" value="excellent" class="rating" />Excellent</label></li>
+                        <li class="radio"><label><input type="radio" name="service" value="good" class="rating" />Good</label></li>
+                        <li class="radio"><label><input type="radio" name="service" value="fair" class="rating" />Fair</label></li>
+                        <li class="radio"><label><input type="radio" name="service" value="poor" class="rating" />Poor</label></li>
                     </ul>
                 </div>
                 <div class="label">
@@ -115,10 +118,10 @@
                 </div>
                 <div class="right">
                     <ul style="list-style: none;">
-                        <li class="radio"><label>Excellent<input type="radio" name="cleanliness" value="excellent" class="rating" /></label></li>
-                        <li class="radio"><label>Good<input type="radio" name="cleanliness" value="good" class="rating" /></label></li>
-                        <li class="radio"><label>Fair<input type="radio" name="cleanliness" value="fair" class="rating" /></label></li>
-                        <li class="radio"><label>Poor<input type="radio" name="cleanliness" value="poor" class="rating" /></label></li>
+                        <li class="radio"><label><input type="radio" name="cleanliness" value="excellent" class="rating" />Excellent</label></li>
+                        <li class="radio"><label><input type="radio" name="cleanliness" value="good" class="rating" />Good</label></li>
+                        <li class="radio"><label><input type="radio" name="cleanliness" value="fair" class="rating" />Fair</label></li>
+                        <li class="radio"><label><input type="radio" name="cleanliness" value="poor" class="rating" />Poor</label></li>
                     </ul>
                 </div>
             </div>
@@ -128,13 +131,13 @@
                 </div>
                 <div class="right">
                     <select id="dropdown" name="source" class="dropdown">
-                        <option value="online">Online</option>
-                        <option value="newspaper">Newspaper</option>
-                        <option value="tv">TV</option>
-                        <option value="radio">Radio</option>
-                        <option value="friend">Friend</option>
-                        <option value="other">Other</option>
-                    </select>
+                    <option value="online">Online</option>
+                    <option value="newspaper">Newspaper</option>
+                    <option value="tv">TV</option>
+                    <option value="radio">Radio</option>
+                    <option value="friend">Friend</option>
+                    <option value="other">Other</option>
+                 </select>
                 </div>
             </div>
             <div class="row">
@@ -144,7 +147,7 @@
                 <div class="right">
                     <textarea name="comment" id="comment" class="input" style="height:70px;resize:vertical;" placeholder="Enter your comment here..."></textarea>
                 </div>
-            </div> 
+            </div>
             <fieldset>
                 <legend>Client</legend>
                 <div class="row">
@@ -152,27 +155,28 @@
                         <label for="name" id="name-label">Name*</label>
                     </div>
                     <div class="right">
-                        <input id="name" type="text" required placeholder="Enter your name">
+                        <input id="name" type="text" required placeholder="Enter your name" class="input">
                     </div>
                     <div class="label">
                         <label for="email" id="email-label">Email*</label>
                     </div>
                     <div class="right">
-                        <input id="email" type="email" required placeholder="Enter your email">
+                        <input id="email" type="email" required placeholder="Enter your email" class="input">
                     </div>
                     <div class="label">
                         <label for="number" id="number-label">Age*</label>
                     </div>
                     <div class="right">
-                        <input id="age" type="number" required placeholder="Enter your age" min="16" max="100">
-                    </div> 
+                        <input id="age" type="number" required placeholder="Enter your age" min="16" max="100" class="input">
+                    </div>
                     <div class="label">
                         <label for="gender" id="gender-label">Gender</label>
                     </div>
                     <div class="right">
-                        <input type="radio" name="gender" value="male">Male
-                        <input type="radio" name="gender" value="female">Female
-                    </div> 
+                        <ul style="list-style: none;" id="gender">
+                            <li class="gender"><input type="radio" name="gender" value="male">Male</li>
+                            <li class="gender"><input type="radio" name="gender" value="female">Female
+                    </div>
                 </div>
             </fieldset>
             <input type="submit" id="submit" />
