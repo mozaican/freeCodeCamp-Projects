@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200');
 
+/*https://www.youtube.com/watch?v=qs9y_vg0gPk*/
+
 * {
     margin: 0;
     padding: 0;
@@ -19,10 +21,13 @@ body {
 
 #menu {
     display: flex;
+    width: 100%;
 }
 
 ul {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: flex-end;
     list-style-type: none;
 }
