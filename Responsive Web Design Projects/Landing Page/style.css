@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200');
 
-/*https://www.youtube.com/watch?v=qs9y_vg0gPk*/
-
 * {
     margin: 0;
     padding: 0;
@@ -20,29 +18,132 @@ body {
 }
 
 #menu {
-    display: flex;
+    text-align: center;
+    position: fixed;
     width: 100%;
-}
-
-ul {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
-    list-style-type: none;
-}
-
-.nav-link {
-    margin-right: 100px;
-    margin-left: 100px;
-    margin-top: 40px;
-    flex: 1 1 0;
-    text-decoration: none;
-    font-size: 1.3em;
-    font-weight: 800;
-    color: #000;
+    background-color: #fff;
+    opacity: 0.7;
+    z-index: 999;
 }
 
 #header-img {
-    margin: 40px 0 40px 40px;
+    width: 100px;
+
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    display: none;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+.nav-toggle:checked ~ nav {
+    transform: scale(1, 1);
+    display: block;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span, 
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: #000;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+@media screen and (min-width: 800px) {
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #menu {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    }
+
+    #header-img {
+        grid-column: 2 / 3;
+    }
+
+    nav {
+        all: unset;
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav li {
+        margin-left: 8em;
+        margin-bottom: 0;
+    }
+
+    nav a:hover {
+        color: 	#A0A0A0;
+    }
+
 }
